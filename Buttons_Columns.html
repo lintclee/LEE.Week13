@@ -8,10 +8,10 @@
     /* Grid container: creates 3 equal columns */
     .button-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       gap: 15px; /* Space between rows and columns */
-      max-width: 600px;
-      margin: 40px auto;
+      max-width: 400px;
+      margin: 20px auto;
     }
 
     /* Shared styling for all buttons */
@@ -22,7 +22,7 @@
       color: white;
       border: none;
       border-radius: 100px;
-      cursor: pointer;
+      cursor: cell;
       transition: opacity 0.2s ease;
     }
 
@@ -31,34 +31,89 @@
     }
 
     /* Individual button colors */
-    .btn-1 { background-color: #3fe639; } /* Red */
-    .btn-2 { background-color: #f4a261; } /* Orange */
-    .btn-3 { background-color: #e9c46a; color: #222; } /* Yellow with dark text */
-    .btn-4 { background-color: #2a9d8f; } /* Teal */
-    .btn-5 { background-color: #457b9d; } /* Steel Blue */
-    .btn-6 { background-color: #1d3557; } /* Navy */
-    .btn-7 { background-color: #8338ec; } /* Purple */
-    .btn-8 { background-color: #ff006e; } /* Magenta */
-    .btn-9 { background-color: #38b000; } /* Green */
+    .btn-1 { background-color: #005e15; color: #222;}
+    .btn-2 { background-color: #1d5700; color: #222;} 
+    .btn-3 { background-color: #01891f; color: #222; } 
+    .btn-4 { background-color: #14cc61; color: #222;} 
+    .btn-5 { background-color: #46f778; color: #222;} 
+    .btn-6 { background-color: #260077; } 
+    .btn-7 { background-color: #4819ad; } 
+    .btn-8 { background-color: #5d27d1; } 
+    .btn-9 { background-color: #733bee; } 
+    .btn-10 { background-color: #976af8; } 
+    .btn-11 { background-color: #ff4501; }
+    .btn-12 { background-color: #ff6701; }
+    .btn-13 { background-color: #f57b2a; }
+    .btn-14 { background-color: #f5932a; }
+    .btn-15 { background-color: #fcb50f; }
+    .btn-16 { background-color: #b500a0; }
+    .btn-17 { background-color: #ff01e1; }
+    .btn-18 { background-color: #f33bde; }
+    .btn-19 { background-color: #ff47ff; }
+    .btn-20 { background-color: #e669f7; }
   </style>
 </head>
 <body>
 
   <div class="button-grid">
     <!-- Row 1 -->
-    <button class="btn btn-1">Home</button>
-    <button class="btn btn-2">Profile</button>
-    <button class="btn btn-3">Messages</button>
+    <button class="btn btn-1">Cmaj7</button>
+    <button class="btn btn-2">Ebmaj7</button>
+    <button class="btn btn-3">Fmaj7</button>
+    <button class="btn btn-4">Abmaj7</button>
+    <button class="btn btn-5">Bbmaj7</button>
 
     <!-- Row 2 -->
-    <button class="btn btn-4">Settings</button>
-    <button class="btn btn-5">Analytics</button>
-    <button class="btn btn-6">Reports</button>
+
+    <input id="Cmaj7FM" type="range" min="1" max="1000" step="1" value="1"><label id="Cmaj7FM">Timbre</label>
+    <input id="Ebmaj7FM" type="range" min="1" max="1000" step="1" value="1"><label id="Ebmaj7FM">Timbre</label>
+    <input id="Fmaj7FM" type="range" min="1" max="1000" step="1" value="1"><label id="Fmaj7FM">Timbre</label>
+    <input id="Abmaj7FM" type="range" min="1" max="1000" step="1" value="1"><label id="Abmaj7FM">Timbre</label>
+    <input id="Bbmaj7FM" type="range" min="1" max="1000" step="1" value="1"><label id="Bbmaj7FM">Timbre</label>
 
     <!-- Row 3 -->
-    <button class="btn btn-7">Billing</button>
-    <button class="btn btn-8">Support</button>
-    <button class="btn btn-9">Log Out</button>
+    <button class="btn btn-6">Cm7</button>
+    <button class="btn btn-7">Dm7</button>
+    <button class="btn btn-8">Fm7</button>
+    <button class="btn btn-9">Gm7</button>
+    <button class="btn btn-10">Am7</button>
+
+    <!-- Row 4 -->
+    <input id="Cm7FM" type="range" min="1" max="1000" step="1" value="1"><label id="Cm7FM">Timbre</label>
+    <input id="Dm7FM" type="range" min="1" max="1000" step="1" value="1"><label id="Dm7FM">Timbre</label>
+    <input id="Fm7FM" type="range" min="1" max="1000" step="1" value="1"><label id="Fm7FM">Timbre</label>
+    <input id="Gm7FM" type="range" min="1" max="1000" step="1" value="1"><label id="Gm7FM">Timbre</label>
+    <input id="Am7FM" type="range" min="1" max="1000" step="1" value="1"><label id="Am7FM">Timbre</label>
+
+     <!-- Row 5 -->
+    <button class="btn btn-11">C7</button>
+    <button class="btn btn-12">D7</button>
+    <button class="btn btn-13">E7</button>
+    <button class="btn btn-14">G7</button>
+    <button class="btn btn-15">A7</button>
+
+    <!-- Row 6 -->
+    <input id="C7FM" type="range" min="1" max="1000" step="1" value="1"><label id="C7FM">Timbre</label>
+    <input id="D7FM" type="range" min="1" max="1000" step="1" value="1"><label id="D7FM">Timbre</label>
+    <input id="E7FM" type="range" min="1" max="1000" step="1" value="1"><label id="E7FM">Timbre</label>
+    <input id="G7FM" type="range" min="1" max="1000" step="1" value="1"><label id="G7FM">Timbre</label>
+    <input id="A7FM" type="range" min="1" max="1000" step="1" value="1"><label id="A7FM">Timbre</label>
+
+    <!-- Row 7 -->
+    <button class="btn btn-16">Cdim7</button>
+    <button class="btn btn-17">Ddim7</button>
+    <button class="btn btn-18">Edim7</button>
+    <button class="btn btn-19">Fdim7</button>
+    <button class="btn btn-20">F#dim7</button>
+
+  <!-- Row 8 -->
+    <input id="Cdim7FM" type="range" min="1" max="1000" step="1" value="1"><label id="Cdim7FM">Timbre</label>
+    <input id="Ddim7FM" type="range" min="1" max="1000" step="1" value="1"><label id="Ddim7FM">Timbre</label>
+    <input id="Edim7FM" type="range" min="1" max="1000" step="1" value="1"><label id="Edim7FM">Timbre</label>
+    <input id="Fdim7FM" type="range" min="1" max="1000" step="1" value="1"><label id="Fdim7FM">Timbre</label>
+    <input id="F#dim7FM" type="range" min="1" max="1000" step="1" value="1"><label id="F#dim7FM">Timbre</label>
+
+
   </div>
 
 </body>
